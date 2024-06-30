@@ -1,0 +1,11 @@
+﻿@model Dotnet6MvcLogin.Models.Domain.ApplicationUser
+
+@{
+    string username = User.Identity.Name;
+    string firstName = ViewBag.FirstName;
+    string lastName = ViewBag.LastName;
+}
+
+<div>
+    Welcome @firstName @lastName (@username)
+</div>
